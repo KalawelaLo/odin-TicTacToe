@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#Game_Board {
+    display: flex;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 600px;
+    max-height: 600px;
+    background-color: khaki;
+    border-color: black;
+    border-width: 15px;
+    border-style: solid;
+    border-radius: 10px;
+    flex: 1 1 1;
+    gap: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#Board {
+    display: grid;
+    font-size: xx-large;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0px;
+}
+
+.Space {
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    padding: 60px;
+    margin: 0px;
+    
+
+}
