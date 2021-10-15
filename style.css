@@ -1,12 +1,18 @@
+h1{
+    text-align: center;
+}
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
 }
 
 #Game_Board {
     display: flex;
-    min-width: 300px;
-    min-height: 300px;
+    flex-direction: column;
+    min-width: 280px;
+    min-height: 280px;
     max-width: 600px;
     max-height: 600px;
     background-color: khaki;
@@ -14,18 +20,22 @@ body {
     border-width: 15px;
     border-style: solid;
     border-radius: 10px;
-    flex: 1 1 1;
     gap: 0px;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px;
 }
 
-#Board {
+.Board {
     display: grid;
     font-size: xx-large;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 0px;
+}
+
+#Score {
+    font-size: xx-large;
 }
 
 .Space {
@@ -34,6 +44,12 @@ body {
     border-style: solid;
     padding: 60px;
     margin: 0px;
-    
+}
 
+#footer {
+    vertical-align: bottom;
+    text-align: center;
+    background-color: khaki;
+    padding: 20px;
+    margin-bottom:70px;
 }
